@@ -1,0 +1,132 @@
+.counter {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.counter-value {
+  font-size: 3rem;
+  margin: 20px 0;
+  transition: color 0.3s ease;
+}
+
+.counter-value.blue {
+  color: #0275d8;
+}
+
+.counter-value.green {
+  color: #5cb85c;
+}
+
+.counter-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.counter button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.increase {
+  background-color: #5cb85c;
+  color: white;
+}
+
+button.decrease {
+  background-color: #d9534f;
+  color: white;
+}
+
+button.reset {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+button.toggle-color {
+  background-color: #5bc0de;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.step-control {
+  margin: 20px 0;
+}
+
+.step-control label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.step-control input {
+  padding: 8px;
+  width: 60px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.history {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e9ecef;
+}
+
+.history h3 {
+  margin-bottom: 10px;
+}
+
+.history-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.history-list li {
+  padding: 5px 10px;
+  background-color: #e2e3e5;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+/* Text color for number */
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+
+/* Background color for the button */
+.blue-bg {
+  background-color: rgb(25, 22, 196);
+  color: white;
+}
+
+.red-bg {
+  background-color: rgb(223, 38, 38);
+  color: white;
+}
+
+
+
+
+
+
+
