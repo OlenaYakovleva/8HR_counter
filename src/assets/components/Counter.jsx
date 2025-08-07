@@ -1,5 +1,7 @@
-import { useReducer, useMemo, useState } from "react";
 
+//import of hooks
+import { useReducer, useMemo, useState } from "react";
+//start state
 const initialState = {
   count: 0,
   color: "blue",
@@ -7,7 +9,7 @@ const initialState = {
 };
 
 
-
+//state — поточний стан (наприклад, { count: 1, color: "red", history: [1] }).
 function reducer(state, action) {
   switch (action.type) {
     case "increment": {
@@ -45,7 +47,7 @@ export function Counter() {
 
   const historyList = useMemo(() => {
     if (state.history.length === 0) return <li>History is empty</li>;
-    return state.history.map((num, index) => <li key={index}>: {num}</li>);
+    return state.history.map((num, index) => <li key={index}># {num}</li>);
   }, [state.history]);
 
   const handleCustomAdd = () => {
@@ -83,7 +85,7 @@ export function Counter() {
           onChange={(e) => setCustomValue(e.target.value)}
           placeholder="Enter a number"
         />
-        
+
        <button onClick={handleCustomAdd}>Add to Count</button>
       </div>
 
